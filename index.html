@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Dashboard Navigation -->
+
+    <nav class="dashboard-nav">
+
+        <div class="dashboard-logo">
+            <span>₹</span>
+            Expense Tracker
+        </div>
+
+        <div class="nav-links">
+            <a href="#overview">Overview</a>
+            <a href="#add-transaction">Add Transaction</a>
+            <a href="#transactions">Transactions</a>
+            <a href="#analytics">Analytics</a>
+        </div>
+
+        <a href="home.html" class="home-link">
+            Home
+        </a>
+
+    </nav>
+
+
+    <main class="dashboard-container">
+
+
+        <!-- Overview -->
+
+        <section id="overview" class="overview-section">
+
+            <div class="welcome-text">
+                <span class="section-label">OVERVIEW</span>
+
+                <h1>Welcome to your dashboard 👋</h1>
+
+                <p>
+                    Keep track of your income, expenses and financial balance.
+                </p>
+            </div>
+
+
+            <!-- Summary Cards -->
+
+            <div class="dashboard">
+
+                <div class="summary-card income-card">
+
+                    <div class="card-icon">↑</div>
+
+                    <div>
+                        <h3>Total Income</h3>
+                        <p id="totalIncome">₹0</p>
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card expense-card">
+
+                    <div class="card-icon">↓</div>
+
+                    <div>
+                        <h3>Total Expenses</h3>
+                        <p id="totalExpenses">₹0</p>
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card balance-card">
+
+                    <div class="card-icon">₹</div>
+
+                    <div>
+                        <h3>Current Balance</h3>
+                        <p id="currentBalance">₹0</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Add Transaction -->
+
+        <section id="add-transaction" class="form-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">TRANSACTION</span>
+                    <h2>Add Transaction</h2>
+                    <p>Record your income or expense.</p>
+                </div>
+
+            </div>
+
+
+            <form id="transactionForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="type">
+                            Transaction Type
+                        </label>
+
+                        <select id="type">
+
+                            <option value="income">
+                                Income
+                            </option>
+
+                            <option value="expense">
+                                Expense
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="amount">
+                            Amount
+                        </label>
+
+                        <input
+                            type="number"
+                            id="amount"
+                            placeholder="₹ 0.00"
+                            min="0"
+                            step="0.01"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="category">
+                            Category
+                        </label>
+
+                        <input
+                            type="text"
+                            id="category"
+                            placeholder="e.g. Food, Salary, Travel"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="date">
+                            Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <input
+                        type="text"
+                        id="description"
+                        placeholder="What was this transaction for?"
+                        required
+                    >
+
+                </div>
+
+
+                <button type="submit" class="primary-button">
+                    + Add Transaction
+                </button>
+
+            </form>
+
+        </section>
+
+
+<!-- Recent Transactions -->
+
+<section id="transactions" class="transactions-section">
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-label">
+                HISTORY
+            </span>
+
+            <h2>
+                Recent Transactions
+            </h2>
+
+            <p>
+                Your latest 5 transactions.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Latest 5 transactions -->
+
+    <div id="transactionList">
+
+        <p class="empty-message">
+            No transactions yet.
+        </p>
+
+    </div>
+
+
+    <!-- Full History Button -->
+
+    <div class="history-button-container">
+
+        <a
+            href="transactions.html"
+            class="history-button"
+        >
+            Get Full History
+        </a>
+
+    </div>
+
+</section>
+
+        <!-- Analytics Placeholder -->
+
+        <!-- Analytics -->
+
+        <section id="analytics" class="analytics-section">
+
+            <span class="section-label">INSIGHTS</span>
+
+            <h2>Analytics</h2>
+
+            <p>Here’s your financial overview for the current month.</p>
+
+
+            <!-- Monthly Summary -->
+
+            <div class="monthly-summary">
+
+                <div class="analytics-card">
+                    <span>Monthly Income</span>
+                    <strong id="monthlyIncome">₹0</strong>
+                </div>
+
+                <div class="analytics-card">
+                    <span>Monthly Expenses</span>
+                    <strong id="monthlyExpenses">₹0</strong>
+                </div>
+
+                <div class="analytics-card">
+                    <span>Monthly Balance</span>
+                    <strong id="monthlyBalance">₹0</strong>
+                </div>
+
+            </div>
+
+
+           <!-- Income vs Expenses + Cash Flow -->
+
+<div class="analytics-chart-row">
+
+    <!-- Income vs Expenses -->
+
+    <div class="monthly-chart">
+
+        <h3>Income vs Expenses</h3>
+
+        <div class="chart-container">
+            <canvas id="incomeExpenseChart"></canvas>
+        </div>
+
+    </div>
+
+
+    <!-- Cash Flow -->
+
+    <div class="monthly-chart cash-flow-chart">
+
+    <div class="cash-flow-header">
+
+        <h3>Cash Flow</h3>
+
+        <select id="cashFlowMonth"></select>
+
+    </div>
+
+    <div class="cash-flow-container">
+
+        <canvas id="cashFlowChart"></canvas>
+
+    </div>
+
+</div>
+
+
+<!-- Money Saved -->
+
+<div class="monthly-chart">
+
+    <h3>Money Saved Each Month</h3>
+
+    <div class="chart-container">
+        <canvas id="savingsChart"></canvas>
+    </div>
+
+</div>
+
+            <!-- Expense by Category -->
+
+            <div class="category-chart">
+
+                <h3>Expense by Category</h3>
+
+                <div id="categoryChart">
+
+                    <p class="chart-empty">
+                        No expense data available.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

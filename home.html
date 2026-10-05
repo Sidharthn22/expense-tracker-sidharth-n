@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker | Manage Your Money</title>
+
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <a href="home.html" class="logo">
+            <span class="logo-icon">₹</span>
+            <span>Expense Tracker</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#analytics">Analytics</a>
+        </div>
+
+        <a href="index.html" class="nav-button">
+            Get Started
+            <span>→</span>
+        </a>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    <span>✦</span>
+                    Simple. Smart. Organized.
+                </div>
+
+                <h1>
+                    Take control of
+                    <span>your expenses.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Track your income, manage your expenses, and understand
+                    where your money goes — all in one simple dashboard.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="index.html" class="primary-button">
+                        Get Started
+                        <span>→</span>
+                    </a>
+
+                    <a href="#features" class="secondary-button">
+                        Explore Features
+                    </a>
+
+                </div>
+
+
+                <!-- Small trust text -->
+
+                <div class="hero-note">
+
+                    <span>✓</span>
+                    No account required
+                    <span class="dot">•</span>
+
+                    <span>✓</span>
+                    Data stored locally
+                    <span class="dot">•</span>
+
+                    <span>✓</span>
+                    Free to use
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= DASHBOARD PREVIEW ================= -->
+
+            <div class="dashboard-preview">
+
+                <div class="preview-window">
+
+                    <!-- Browser top -->
+
+                    <div class="window-top">
+
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="window-title">
+                            Expense Tracker
+                        </div>
+
+                        <div class="window-menu">
+                            ⋮
+                        </div>
+
+                    </div>
+
+
+                    <!-- Dashboard -->
+
+                    <div class="preview-dashboard">
+
+                        <div class="preview-sidebar">
+
+                            <div class="preview-logo">
+                                <span>₹</span>
+                            </div>
+
+                            <div class="preview-nav active">
+                                <span>⌂</span>
+                            </div>
+
+                            <div class="preview-nav">
+                                <span>＋</span>
+                            </div>
+
+                            <div class="preview-nav">
+                                <span>☷</span>
+                            </div>
+
+                            <div class="preview-nav">
+                                <span>▥</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="preview-main">
+
+                            <div class="preview-heading">
+
+                                <div>
+                                    <small>OVERVIEW</small>
+
+                                    <h3>
+                                        Welcome to your dashboard 👋
+                                    </h3>
+
+                                    <p>
+                                        Keep track of your income, expenses and
+                                        financial balance.
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- Summary cards -->
+
+                            <div class="preview-summary">
+
+                                <div class="mini-card income-mini">
+
+                                    <div class="mini-icon">
+                                        ↑
+                                    </div>
+
+                                    <div>
+                                        <small>Total Income</small>
+                                        <strong>₹35,000</strong>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="mini-card expense-mini">
+
+                                    <div class="mini-icon">
+                                        ↓
+                                    </div>
+
+                                    <div>
+                                        <small>Total Expenses</small>
+                                        <strong>₹8,100</strong>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="mini-card balance-mini">
+
+                                    <div class="mini-icon">
+                                        ₹
+                                    </div>
+
+                                    <div>
+                                        <small>Current Balance</small>
+                                        <strong>₹26,900</strong>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Preview content -->
+
+                            <div class="preview-grid">
+
+                                <div class="preview-box">
+
+                                    <div class="box-title">
+                                        Recent Transactions
+                                    </div>
+
+
+                                    <div class="mini-transaction">
+
+                                        <div class="transaction-circle green">
+                                            ↑
+                                        </div>
+
+                                        <div class="transaction-info">
+
+                                            <strong>
+                                                Monthly salary
+                                            </strong>
+
+                                            <small>
+                                                Salary • 01 Oct 2026
+                                            </small>
+
+                                        </div>
+
+                                        <strong class="green-text">
+                                            +₹35,000
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="mini-transaction">
+
+                                        <div class="transaction-circle red">
+                                            ↓
+                                        </div>
+
+                                        <div class="transaction-info">
+
+                                            <strong>
+                                                Grocery shopping
+                                            </strong>
+
+                                            <small>
+                                                Food • 02 Oct 2026
+                                            </small>
+
+                                        </div>
+
+                                        <strong class="red-text">
+                                            -₹2,300
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="mini-transaction">
+
+                                        <div class="transaction-circle red">
+                                            ↓
+                                        </div>
+
+                                        <div class="transaction-info">
+
+                                            <strong>
+                                                Bus and auto
+                                            </strong>
+
+                                            <small>
+                                                Travel • 03 Oct 2026
+                                            </small>
+
+                                        </div>
+
+                                        <strong class="red-text">
+                                            -₹1,700
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="mini-transaction">
+
+                                        <div class="transaction-circle red">
+                                            ↓
+                                        </div>
+
+                                        <div class="transaction-info">
+
+                                            <strong>
+                                                Clothes and accessories
+                                            </strong>
+
+                                            <small>
+                                                Shopping • 04 Oct 2026
+                                            </small>
+
+                                        </div>
+
+                                        <strong class="red-text">
+                                            -₹3,200
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Mini chart -->
+
+                                <div class="preview-box chart-box">
+
+                                    <div class="box-title">
+                                        Monthly Overview
+                                    </div>
+
+                                    <div class="fake-chart">
+
+                                        <div class="chart-line"></div>
+
+                                        <div class="chart-point p1"></div>
+                                        <div class="chart-point p2"></div>
+                                        <div class="chart-point p3"></div>
+                                        <div class="chart-point p4"></div>
+                                        <div class="chart-point p5"></div>
+                                        <div class="chart-point p6"></div>
+
+                                    </div>
+
+                                    <div class="chart-labels">
+
+                                        <span>May</span>
+                                        <span>Jun</span>
+                                        <span>Jul</span>
+                                        <span>Aug</span>
+                                        <span>Sep</span>
+                                        <span>Oct</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features-section" id="features">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    FEATURES
+                </span>
+
+                <h2>
+                    Everything you need to manage your money
+                </h2>
+
+                <p>
+                    A simple set of tools designed to help you understand
+                    and organize your everyday finances.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon blue-icon">
+                        ₹
+                    </div>
+
+                    <h3>
+                        Track Income & Expenses
+                    </h3>
+
+                    <p>
+                        Easily record your income and expenses with
+                        categories, dates and descriptions.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon green-icon">
+                        ↑
+                    </div>
+
+                    <h3>
+                        Instant Balance
+                    </h3>
+
+                    <p>
+                        See your total income, expenses and current
+                        balance automatically.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon purple-icon">
+                        ▦
+                    </div>
+
+                    <h3>
+                        Organized History
+                    </h3>
+
+                    <p>
+                        View all your transactions in one place and
+                        quickly find the information you need.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon orange-icon">
+                        ◔
+                    </div>
+
+                    <h3>
+                        Financial Analytics
+                    </h3>
+
+                    <p>
+                        Understand your spending patterns with monthly
+                        summaries and visual analytics.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon red-icon">
+                        ▤
+                    </div>
+
+                    <h3>
+                        Category Insights
+                    </h3>
+
+                    <p>
+                        See where your money goes with category-based
+                        expense breakdowns.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon teal-icon">
+                        ✓
+                    </div>
+
+                    <h3>
+                        Local & Private
+                    </h3>
+
+                    <p>
+                        Your transactions are stored in your browser
+                        using Local Storage.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="how-section" id="how-it-works">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    HOW IT WORKS
+                </span>
+
+                <h2>
+                    Manage your finances in three simple steps
+                </h2>
+
+                <p>
+                    No complicated setup. Just add your transactions
+                    and start understanding your money.
+                </p>
+
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Add a transaction
+                    </h3>
+
+                    <p>
+                        Enter your income or expense with its amount,
+                        category, date and description.
+                    </p>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Track your activity
+                    </h3>
+
+                    <p>
+                        View your latest transactions or open the full
+                        transaction history.
+                    </p>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Understand your money
+                    </h3>
+
+                    <p>
+                        Use analytics and charts to understand your
+                        spending and savings.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ANALYTICS SHOWCASE ================= -->
+
+        <section class="analytics-showcase" id="analytics">
+
+            <div class="analytics-content">
+
+                <span class="section-label">
+                    ANALYTICS
+                </span>
+
+                <h2>
+                    Turn your transactions into useful insights.
+                </h2>
+
+                <p>
+                    Get a clear picture of your financial activity with
+                    monthly income, expenses, savings and category-based
+                    insights.
+                </p>
+
+
+                <div class="analytics-points">
+
+                    <div>
+                        <span>✓</span>
+                        Monthly income & expense summary
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Income vs expenses visualization
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Money saved each month
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Expense breakdown by category
+                    </div>
+
+                </div>
+
+
+                <a href="index.html" class="primary-button">
+                    Explore Dashboard
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- Analytics visual -->
+
+            <div class="analytics-visual">
+
+                <div class="analytics-card-large">
+
+                    <div class="analytics-card-header">
+
+                        <div>
+                            <small>MONTHLY BALANCE</small>
+                            <strong>₹26,900</strong>
+                        </div>
+
+                        <span class="growth">
+                            +8.4%
+                        </span>
+
+                    </div>
+
+
+                    <div class="large-chart">
+
+                        <div class="large-grid grid-one"></div>
+                        <div class="large-grid grid-two"></div>
+                        <div class="large-grid grid-three"></div>
+                        <div class="large-grid grid-four"></div>
+
+                        <svg
+                            viewBox="0 0 500 180"
+                            preserveAspectRatio="none"
+                            class="chart-svg"
+                        >
+
+                            <polyline
+                                points="0,135 70,100 140,125 210,65 280,95 350,55 420,75 500,30"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="4"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+
+                        </svg>
+
+                    </div>
+
+
+                    <div class="large-chart-labels">
+
+                        <span>Mar</span>
+                        <span>Apr</span>
+                        <span>May</span>
+                        <span>Jun</span>
+                        <span>Jul</span>
+                        <span>Aug</span>
+                        <span>Sep</span>
+                        <span>Oct</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="analytics-mini-cards">
+
+                    <div>
+                        <small>Monthly Income</small>
+                        <strong>₹35,000</strong>
+                    </div>
+
+                    <div>
+                        <small>Monthly Expenses</small>
+                        <strong>₹8,100</strong>
+                    </div>
+
+                    <div>
+                        <small>Money Saved</small>
+                        <strong>₹26,900</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta-section">
+
+            <div class="cta-content">
+
+                <span class="section-label">
+                    GET STARTED
+                </span>
+
+                <h2>
+                    Ready to take control of your expenses?
+                </h2>
+
+                <p>
+                    Start tracking your income and expenses today.
+                    Keep everything organized in one simple dashboard.
+                </p>
+
+                <a href="index.html" class="cta-button">
+                    Open Expense Tracker
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+
+                <span class="logo-icon">
+                    ₹
+                </span>
+
+                <strong>
+                    Expense Tracker
+                </strong>
+
+            </div>
+
+            <p>
+                Simple expense management for everyday life.
+            </p>
+
+            <span class="copyright">
+                © 2026 Expense Tracker
+            </span>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
